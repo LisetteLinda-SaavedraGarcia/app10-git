@@ -1,0 +1,623 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sexta Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-appp10.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobie.icons-1.4.5.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobie.structure-1.4.5.min.css"/>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!--grupo JavaScript-->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/batalla.jpg','imagenes/Maximiliano.jpg','imagenes/5 de mayo.jpg','imagenes/Peleas.jpg','imagenes/lanzar.jpg','imagenes/flores.jpg','imagenes/rosa.jpg','imagenes/here2.jpg','imagenes/cerro.jpg','imagenes/pina.jpg','imagenes/ave.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>ATLIXCO,PUEBLA</h1>
+</div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/pueblo_magico.jpg" alt="Pueblo magico" title="Pueblo magico" id="wows1_0"/></li>
+		<li><img src="data1/images/villa.jpg" alt="VILLA" title="VILLA" id="wows1_1"/></li>
+		<li><img src="data1/images/pinacoteca.jpg" alt="Pinacoteca" title="Pinacoteca" id="wows1_2"/></li>
+		<li><img src="data1/images/villa1.jpg" alt="VILLA1" title="VILLA1" id="wows1_3"/></li>
+		<li><img src="data1/images/pinacoteca_0.png" alt="pinacoteca" title="pinacoteca" id="wows1_4"/></li>
+		<li><img src="data1/images/villa4.jpg" alt="VILLA4" title="VILLA4" id="wows1_5"/></li>
+		<li><img src="data1/images/viveros.jpg" alt="viveros" title="viveros" id="wows1_6"/></li>
+		<li><img src="data1/images/viveros1.jpg" alt="viveros1" title="viveros1" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/viveros2.jpg" alt="wow slider" title="viveros2" id="wows1_8"/></a></li>
+		<li><img src="data1/images/viveros3.jpg" alt="viveros3" title="viveros3" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Pueblo magico"><span><img src="data1/tooltips/pueblo_magico.jpg" alt="Pueblo magico"/>1</span></a>
+		<a href="#" title="VILLA"><span><img src="data1/tooltips/villa.jpg" alt="VILLA"/>2</span></a>
+		<a href="#" title="Pinacoteca"><span><img src="data1/tooltips/pinacoteca.jpg" alt="Pinacoteca"/>3</span></a>
+		<a href="#" title="VILLA1"><span><img src="data1/tooltips/villa1.jpg" alt="VILLA1"/>4</span></a>
+		<a href="#" title="pinacoteca"><span><img src="data1/tooltips/pinacoteca_0.png" alt="pinacoteca"/>5</span></a>
+		<a href="#" title="VILLA4"><span><img src="data1/tooltips/villa4.jpg" alt="VILLA4"/>6</span></a>
+		<a href="#" title="viveros"><span><img src="data1/tooltips/viveros.jpg" alt="viveros"/>7</span></a>
+		<a href="#" title="viveros1"><span><img src="data1/tooltips/viveros1.jpg" alt="viveros1"/>8</span></a>
+		<a href="#" title="viveros2"><span><img src="data1/tooltips/viveros2.jpg" alt="viveros2"/>9</span></a>
+		<a href="#" title="viveros3"><span><img src="data1/tooltips/viveros3.jpg" alt="viveros3"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ATLIXCO</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>EX-CONVENTO DEL CARMEN</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CERRO DE SAN MIGUEL</h2>
+
+  </a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CALLE DE LAS FLORES</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>HOSPITAL Y PINACOTECA SAN JUAN DE DIOS</h2>
+
+</a>
+</li>
+
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>VOLADORES DE PAPANTLA</h2>
+</a>
+</li>
+
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>VILLA ILUMINADA</h2>
+</a>
+</li>
+
+
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>VIVEROS CABRERA</h2>
+</a>
+</li>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Autora</h1>
+<div>
+<H4>
+<p>CENTRO DE BACHILLERATO TECNOLOGICO INDUSTRIAL Y DE SERVICIOS NO.16</p>
+<p>LISETTE LINDA SAAVEDRA GARCIA</p>
+<p>4° SEMESTRE PROGRAMACIÓN<br>
+</p>
+</H4>
+</div>
+<div>
+ <img src="imagenes/fotoperfil.jpg" width="23%" height="28%"> 
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed"> 
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+</div>
+<div>
+<h4> Atlixco</h4>
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>ATLIXCO</h1></div>
+<div data-role="content" align="left">
+<div>
+<center>
+  <p>Atlixco, nombre azteca formado de Atl, Agua; Ixtla, llanura, valle (de Ixtli, cara, superficie); Tla, abundancia, y de la final co, que indica en; el conjunto forma la palabra Atl-ix-co que significa "Agua en el valle o en la superficie del suelo".
+<P></P>
+Escudo de Armas
+<P></P>
+Fue concedido por Felipe II en su Real Cédula, expedida en Barcelona el 29 de Septiembre de 1579.</p>
+  <p>El municipio de Atlixco se localiza en la parte centro Oeste del estado de Puebla. Tiene una altitud promedio de 1840m sobre el nivel del mar. Sus coordenadas geográficas son los paralelos 18º 49` 30" y 18º 58` 30" de latitud norte y los meridianos 98º 18` 24" y 98º 33` 36" de longitud occidental. El municipio colinda al Norte con el municipio de Tanguismanalco, al Noreste con los municipios de Santa Isabel Cholula y Ocoyucan, al Suroeste con el municipio de Atzitzihuacan, al Sur con los municipios de Huaquechula y Tepeojuma, Sureste con el municipios de San Diego la Meza Tochimiltzingo, al Este con la Ciudad de Puebla, y al Oeste con el municipio de Tochimilco</p></center>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>PUEBLO</h1>
+<div><img src="imagenes/Atlixco.jpg" width="41%" height="33%">
+ </div>
+</div>
+</div>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>MAGICO</h1>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image48','','imagenes/here2.jpg',1)"><img src="imagenes/Pueblo magico.jpg" width="470" height="313" id="Image48"></a>
+</div>
+</div>
+<p><center>Para saber más dar click aquí:</center><div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://atlixco.gob.mx/lugares-de-interes" data-role="button" id="beep">
+reseña completa
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+       
+       </p>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+ 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>EX-CONVENTO DEL CARMEN</h1>
+</div>
+<div data-role="content" align="left">
+<div><center>
+  <p>Entrada Gratuita
+10 a 18 hrs (Cierra Lunes)<P></P>
+4 Nte. No. 202, Atlixco 
+a una cuadra del Zócalo <P></P>
+Descripción<P></P>
+Construido entre 1600 y 1620 lo limita una enorme barda que abarca aproximadamente dos manzanas y es un claro ejemplo del estilo barroco de la época. Cuando fueron exclaustrados los religiosos en 1853 el lugar fue convertido en rastro, luego oficinas gubernamentales, escuela (cuando tiran su torre), cárcel y cuartel para tropas federales. Ahora es conocido como el Centro Cultural del Carmen y alberga un pequeño museo arqueológico.
+  </P></center>
+   <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>EX-CONVENTO</h1>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/flores.jpg',1)"><img src="imagenes/ex convento.jpg" width="748" height="499" id="Image27"></a>
+</div>
+</div>
+   </div>
+  
+  <p><center>Para saber más dar click aquí:</center><div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.zonaturistica.com/atractivo-turistico/1160/exconvento-del-carmen-atlixco.html" data-role="button" id="beep">
+reseña completa
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+       
+       </p>
+  </div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CERRO DE SAN MIGUEL</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>El cerro ha sido testigo de toda la vida de Atlixco y sus habitantes. Es un cerro que encierra misterios, energías, guarda voces del tiempo, testigo de la transformación de la ciudad y su gente. Es un cerro que desde ahí cerca de 50 años se juntan las etnias de la región y del estado para bailarle a Quetzalcóatl y a Macuilxochitl en el Huey Atlixcáyotl, antiquísima fiesta de celebraciones mediante la música y el baile para dar de comer y agradar a los dioses antiguos y a los santos modernos que tienen como emblema de redención en Cristo.
+ <p></p>
+Si tienes ánimo aventurero te invitamos a subir al Cerro de San Miguel para que eches un vistazo de la ciudad desde sus miradores y si todavía te quedan un poco de fuerzas, que subas la escalinata hasta la Ermita dedicada al <a href="http://www.corazones.org/santos/miguel_arcangel.htm">Arcángel San Miguel</a>, que cuenta la historia, encerró al diablito que hacía de las suyas en los solares dentro del pozo que se encuentra ahí.
+</p>
+     </h2>  
+     <center>
+       <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('die','','imagenes/cerro.jpg',1)"><img src="imagenes/escaleras.jpg" alt="hola" width="550" height="366" id="die"></a>
+       </p>
+       <p>Para saber más dar click aquí:<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://puebla.travel/es/ver-hacer/sitios-de-interes/miradores/item/cerro-de-san-miguel" data-role="button" id="beep">
+reseña completa
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+       
+       </p>
+     </center>
+</div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CALLE DE LAS FLORES</h1>
+</div>
+
+
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/atlixco.jpg" alt="Atlixco" title="Atlixco" id="wows1_0"/></li>
+		<li><img src="data1/images/atlixco1.jpg" alt="Atlixco1" title="Atlixco1" id="wows1_1"/></li>
+		<li><img src="data1/images/atlixco2.jpg" alt="Atlixco2" title="Atlixco2" id="wows1_2"/></li>
+		<li><img src="data1/images/cerro.jpg" alt="cerro" title="cerro" id="wows1_3"/></li>
+		<li><img src="data1/images/ave.jpg" alt="ave" title="ave" id="wows1_4"/></li>
+		<li><img src="data1/images/flor.jpg" alt="flor" title="flor" id="wows1_5"/></li>
+		<li><img src="data1/images/flor1.jpg" alt="flor1" title="flor1" id="wows1_6"/></li>
+		<li><img src="data1/images/flor2.jpg" alt="flor2" title="flor2" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/flor3.jpg" alt="wow slider" title="flor3" id="wows1_8"/></a></li>
+		<li><img src="data1/images/flor4.jpg" alt="flor4" title="flor4" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Atlixco"><span><img src="data1/tooltips/atlixco.jpg" alt="Atlixco"/>1</span></a>
+		<a href="#" title="Atlixco1"><span><img src="data1/tooltips/atlixco1.jpg" alt="Atlixco1"/>2</span></a>
+		<a href="#" title="Atlixco2"><span><img src="data1/tooltips/atlixco2.jpg" alt="Atlixco2"/>3</span></a>
+		<a href="#" title="cerro"><span><img src="data1/tooltips/cerro.jpg" alt="cerro"/>4</span></a>
+		<a href="#" title="ave"><span><img src="data1/tooltips/ave.jpg" alt="ave"/>5</span></a>
+		<a href="#" title="flor"><span><img src="data1/tooltips/flor.jpg" alt="flor"/>6</span></a>
+		<a href="#" title="flor1"><span><img src="data1/tooltips/flor1.jpg" alt="flor1"/>7</span></a>
+		<a href="#" title="flor2"><span><img src="data1/tooltips/flor2.jpg" alt="flor2"/>8</span></a>
+		<a href="#" title="flor3"><span><img src="data1/tooltips/flor3.jpg" alt="flor3"/>9</span></a>
+		<a href="#" title="flor4"><span><img src="data1/tooltips/flor4.jpg" alt="flor4"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="content" align="left">
+<div>
+  <p>Sobre la Avenida Hidalgo se encuentra esta emblemática calle denominada la Calle de las Flores, donde podrás apreciar sus renovadas fachadas adornadas con flores del municipio.
+Durante el recorrido podrás apreciar las casonas que fueron reconstruidas, hasta llegar a la Escalera Ancha lugar donde se realizaba el Huey Atlixcáyotl y ahora tras su remodelación encontrarás un reloj gigante hecho a base de flores.</p>
+   <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CALLE DE LAS FLORES</h1>
+<div>
+ <img src="imagenes/flor1.jpg" width="55%" height="33%"> 
+ <img src="imagenes/flor2.jpg" width="55%" height="36%"> 
+ <img src="imagenes/flor3.jpg" width="55%" height="38%"> 
+ <img src="imagenes/flor4.jpg" width="55%" height="37%"> 
+ <img src="imagenes/flor5.jpg" width="55%" height="48%"> 
+</div>
+</div>
+
+    </div>
+    <center>
+  Si gustaría leer mas sobre la calle de las flores dar click aquí:
+    </center>
+  <div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://puebla.travel/es/ver-hacer/sitios-de-interes/espacios-naturales-3/item/calle-de-las-flores" data-role="button" >
+ reseña completa
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>HOSPITAL Y PINACOTECA SAN JUAN DE DIOS</h1>
+</div>
+<div data-role="content" align="left">
+<div><center>
+  <p>Uno de los pocos hospitales de la época de la colonia que sigue conservando su uso original, así como una fuente de piedra que representa a San Adrián luchando con un león.
+En la <a href="http://venio.info/pregunta/que-es-una-pinacoteca-8897.html">Pinacoteca</a> podrás apreciar la colección de la vida de San Juan de Dios, fundador de la orden de los “Juaninos” quienes se encargaban de los hospitales en la Nueva España. El acceso a la pinacoteca municipal se solicita previa cita en las oficinas de turismo.
+A un lado del hospital se encuentra la iglesia dedicada a <a href="http://www.azc.uam.mx/publicaciones/tye/tye14/art_hist_04.html">San Rafael Arcángel</a>, a quienes los juaninos se encomendaban.
+Está prohibido tomar fotos y entrar con alimentos. </p></center>
+  <center>
+    <p></p>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','imagenes/pina.jpg',1)"><img src="imagenes/pinacoteca.png" width="703" height="396" id="Image46"></a></p>
+    <p><br>
+      <img src="imagenes/Pinacoteca.jpg" width="36%" height="31%">
+    </p>
+    <p>&nbsp;</p>
+  </center>
+  <center>
+ 
+ <p>Para saber más dar click aquí:<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.clubensayos.com/Historia/Hospital-Municipal-Y-Pinacoteca-San-Juan-De-Dios/309876.html" data-role="button" id="beep">
+reseña completa
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+       
+       </p>
+  </center>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+
+
+
+
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>LOS VOLADORES DE PAPANTLA</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>Este festival es denominado la fiesta de la familia atlixquense. Y se lleva a acabo en la Plazuela de la Danza del <a href="http://www.regionalpuebla.mx/corredor-atlixco/item/932-el-cerro-de-san-miguel-icono-cultural-pero-tambien-un-pulmon-de-la-ciudad.html">cerro de San Miguel</a>. El Atlixcayotontli se realiza antes que la gran fiesta del Huey Alixcáyotl, que se celebra el último domingo de septiembre.
+  <p>  
+  <P><div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Voladores</h1>
+<div><img src="imagenes/voladores.jpeg" width="40%" height="33%">
+</div>
+</div>
+</div>
+</P>
+Esta tradición ya tiene más de cuarenta años y es organizada por los fundadores del Huey Atlixcáyotl, Atlixcayotontli AC. Se reúnen grupos de baile que inician con Bailes de Convite y concluyen con el Rito del Palo Volador. Que se conoce mejor como el que se realiza en Papantla con los voladores.</p>
+     </h2> 
+     <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Papantla</h1>
+<div><img src="imagenes/voladores1.jpg" width="40%" height="33%">
+</div>
+</div>
+</div> 
+     <center>
+      
+       
+       <p>Para saber más dar click aquí:<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://pueblados22.mx/atlixcayotontli-la-fiesta-chica-atlixco/" data-role="button" id="beep">
+reseña completa
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+       
+       </p>
+     </center>
+</div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+
+
+
+
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>VILLA ILUMINADA</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>La temática de este año para la Villa iluminada en Atlixco serán los <a href="http://www.navidaddigital.com/miscelanea/que-es-un-villancico/">villancicos</a> Cierro los ojos, faltan unos segundos para las siete de la noche, escucho las voces emocionadas de toda la gente a mi alrededor. Los abro y veo que la ciudad se ha llenado de colores. En un camino de 2 km verás figuras que te contarán los villancicos, ¡todo iluminado!   
+¿Dónde? Atlixco, Puebla. El recorrido comienza en el zócalo y termina en el Parque Revolución
+Horario: Lun. a dom., 19:00 a 01:00 A partir del 3 de diciembre hasta el 6 de enero. 
+¿Cuánto cuesta? Entrada libre
+  <P></P><img src="imagenes/VILLA.jpg" width="40%" height="33%"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image67','','imagenes/ave.jpg',1)"><img src="imagenes/ILUMINADA.jpg" width="510" height="290" id="Image67"></a>
+ 
+<BR>En la Villa Iluminada en Atlixco, no olvides caminar por debajo del famoso arco del lugar El recorrido empieza en el zócalo, donde la fachada del Palacio Municipal está adornada, al igual que los pinos y otros árboles. Voltea hacia todos lados de los edificios, que desde el piso hasta el techo estarán llenos de luces, muñecos navideños y paisajes representativos de Atlixco.</p>
+     </h2>  
+     <center>
+      
+       <img src="imagenes/VILLA2.jpg" width="40%" height="33%">
+       
+       <p><img src="imagenes/VILLA3.jpg" width="40%" height="33%">
+       </p>
+       <p><img src="imagenes/VILLA4.jpg" width="40%" height="33%">
+       </p>
+       <p>Para saber más dar click aquí:<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.dondeir.com/2016/11/villa-iluminada-atlixco/" data-role="button" id="beep">
+reseña completa
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+       
+       </p>
+     </center>
+</div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>VIVEROS CABRERA</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+  <p>Uno de los muchos atractivos turísticos que ofrece el municipio de Atlixco son los viveros de la colonia cabrera, mismos que se han encargado de preservar el nombre de “Atlixco de las Flores” esto por la producción de más de 120 mil plantas que se tiene.
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Atractivo turistico</h1>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image47','','imagenes/rosa.jpg',1)"><img src="imagenes/Atlixco2.jpg" width="505" height="365" id="Image47"></a>
+</div>
+</div>
+</div> 
+
+
+
+</p>
+Son más de 100 los viveros que se encuentran en toda esta colonia que gracias al turista, así como a los amantes de las flores día con día se va posicionando en el mercado como lugar favorito para llevarse un recuerdo viviente de este Pueblo Mágico.
+<p>/
+Quienes llegan por primera vez a Atlixco, no dudan en visitar los viveros mismos que guardan celosamente las miles y miles de variedades que ahí se producen y por mencionar algunas están los Ciprés, Clavellina, Crisantemo, Violeta persa, Gazania, Geranio, Azucena, Palo Brasil, Petunia, Rosas, Pensamiento, arrayán, dedo de niño, jacarandá, jazmín, margarita, mora, mosaico, lengua de pájaro, mariana y la lista es interminables, solo basta llegar a uno de estos viveros y preguntar por su planta favorita y sin duda alguna le mostraran las variedad que en estos viveros se producen.
+<p><div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Viveros</h1>
+<div><img src="imagenes/Atlixco1.jpg" width="40%" height="33%"></div>
+</div>
+</div> </p>
+La temporada influye mucho en cuanto a las ventas, un claro ejemplo es en noviembre y diciembre donde lo fuerte es la noche buena, misma que se comienza a producir en este mes de marzo para que se encuentre en su máximo esplendor a finales de cada año.</p>
+     </h2>  
+     <center>
+       <p><img src="imagenes/viveros.jpg" width="31%" height="40%">
+       </p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p><img src="imagenes/viveros2.jpg" width="34%" height="26%"><img src="imagenes/viveros1.jpg" width="34%" height="28%"><img src="imagenes/viveros3.jpg" width="35%" height="31%">
+       </p>
+       <p>Para saber más dar click aquí:<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://ediciones.diariopuntual.com/centro/2016/03/23/16919" data-role="button" id="beep">
+reseña completa
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+       
+       </p>
+     </center>
+</div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>PUEBLO MAGICO</h4>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
